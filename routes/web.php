@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/*
+ *
+ * Web root for getting data
+ *
+ * */
+
+Route::get('api/response_data', 'LoanDataController@index');
